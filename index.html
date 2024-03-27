@@ -554,33 +554,69 @@ To develop my talents & knowledge and learn more about my subject of study, I ha
 
 
         
+        <style>
+          .clients-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+          }
+         
+          .clients-list li {
+            flex-basis: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            text-align: center;
+          }
+         
+          .clients-list li img {
+            width: 100%;
+            height: auto;
+          }
+         
+          @media screen and (max-width: 768px) {
+            .clients-list li {
+              flex-basis: calc(50% - 20px);
+            }
+          }
+         
+          @media screen and (max-width: 480px) {
+            .clients-list li {
+              flex-basis: 100%;
+            }
+          }
+          @media screen and (max-width: 480px) {
+            .icon-resize ion-icon {
+              transform: scale(0.7);
+            }
+          }
+        </style>
         
-
         <section class="clients">
-              <h3 class="h3 testimonials-title">Current and past affiliations</h3>
-              <h6 class="h6 service-item-title">The organisations, institutes, and programs I am currently working for (or under/on), or have worked for in the past.</h6> 
-              
-              <ul class="clients-list has-scrollbar">
-                <div>
-                 <img src="./assets/images/l&t.png" alt="client logo">   
-                  <h6 class="h6 service-item-title">Larsen & Toubro </h6> 
-                </div>
-              <div>
-                <img src="./assets/images/igsrs.jpg" alt="client logo">  
-                <h6 class="h6 service-item-title">IGS Recruiting Solutions </h6>
-              </div>
-              <div>
-                <img src="./assets/images/gdsc.png" alt="client logo">  
-                <h6 class="h6 service-item-title">Google Developers Students Club AUM</h6>
-              </div>
-              <div>
-                <img src="./assets/images/ecellaum.png" alt="client logo">  
-                <h6 class="h6 service-item-title">E Cell AUM</h6>
-              </div>
-
+          <h3 class="h3 testimonials-title">Current and past affiliations</h3>
+          <h6 class="h6 service-item-title">The organisations, institutes, and programs I am currently working for (or under/on), or have worked for in the past.</h6>
+          <ul class="clients-list icon-resize">
+            <li>
+              <img src="./assets/images/l&t.png" alt="Larsen & Toubro">
+              <h6 class="h6 service-item-title ">Larsen & Toubro</h6>
+            </li>
+            <li>
+              <img src="./assets/images/igsrs.jpg" alt="IGS Recruiting Solutions">
+              <h6 class="h6 service-item-title">IGS Recruiting Solutions</h6>
+            </li>
+            <li>
+              <img src="./assets/images/gdsc.png" alt="Google Developers Students Club AUM">
+              <h6 class="h6 service-item-title">Google Developers <br>Students Club AUM</h6>
+            </li>
+            <li>
+              <img src="./assets/images/ecellaum.png" alt="E Cell AUM">
+              <h6 class="h6 service-item-title">E Cell AUM</h6>
+            </li>
           </ul>
-
         </section>
+        
         
 
       </article>
